@@ -20,7 +20,7 @@ class Circles(QWidget, WindowSample):
         side = random.choice(range(650))
 
         self.circle.setGeometry(x, y, side, side)
-        self.circle.setStyleSheet(f'border-radius: {side // 2}; background-color: #FFFF00;')
+        self.circle.setStyleSheet(f'border-radius: {side // 2}; background-color: rgb({random.choice(range(256))}, {random.choice(range(256))}, {random.choice(range(256))});')
         self.circle.show()
 
 
